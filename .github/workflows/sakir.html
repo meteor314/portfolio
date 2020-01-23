@@ -1,0 +1,677 @@
+
+<!DOCTYPE html><html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Portfolio</title>
+<meta charset='utf-8'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<style>
+/*nav bar */
+
+nav {
+	box-shadow : 3px 2px 13px #333;
+	height : 50px;
+	position : fixed;
+	top : 0;
+	left : 0;
+	right : 0;	
+	z-index : 9999;
+	background : #fff;
+	text-align : center;
+}
+nav .nav-items {	
+  float: left;
+}
+
+.nav .main {
+	float : right;
+	position : fixed;
+	right : 0;
+	background : #eee;
+}
+
+
+
+	/* hero section */
+.overlay {
+	height: 100%;
+	width: 100%;
+	padding-bottom: 200px;
+	padding-top : 200px;
+	text-align : center;
+	font-size :  57px;
+	color: yellow;
+}
+
+#home {
+	background: url("https://images.pexels.com/photos/1714341/pexels-photo-1714341.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+	
+	background-size:  cover;
+	height : 800px;
+	margin-top: 19px;
+}
+#home img {
+		filter  :  blur(30px);
+}
+
+.overlay .designation {
+	font-size :  27px;
+
+}
+
+
+/* iconic nav bar */
+.icon-bar {
+  width: 100%;
+  background-color:#555; ;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+.icon-bar a:hover {
+	opacity : 0.7;
+}
+/* end iconic navbar */
+
+
+/* end hero section */
+
+/* text */ 
+.text p {
+	color : rgba(17, 19, 23, 0.9);
+	font-size :  19px;
+	margin-top :  50px;
+	padding  : 23px;
+	text-align: center;
+
+}
+
+h2 {
+	text-align : center;
+}
+
+/* end text */
+
+/* section */
+.section {
+	background-color: white;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   text-align : justify;
+   padding: 23px;
+   padding-top: 67px;
+   padding-bottom:  67px;
+
+}
+
+.container-fluid img:hover {
+	opacity: 0.3;
+
+}
+.icon {
+	font-size: 47px;
+}
+
+.section i {
+	margin-left: 37px;
+}
+/* end section */
+
+/* contact */
+#middle {
+    margin-right: auto;
+    margin-left: auto;
+    height: 400px;
+    margin-top: 65px;    }
+
+#middlecontent {
+    font: normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 10px;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   width: 575px;
+	height: 400px;
+}
+ .btn {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+ .btn:hover {
+	background: #008CBA;
+	transition: 0.7s;
+	color: white;
+}
+
+#goomap {
+float:right;
+}
+#middlecontent h3{
+	background: #4D4D4D;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #797979;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 20px;
+	width: 578px;
+	margin: -13px ;
+}
+#middlecontent p{
+	font-size: 18px;
+	font-weight: 100;
+	padding: 20px;
+	width: 550px;
+	margin: -13px ;
+	padding: 23px;
+}
+/* end contact */
+
+/* input */
+input, textarea {
+	padding : 15px;
+	width : 100%;
+	border-size : 1px;
+	border : 1px solid blue;
+	background: rgba(255,255,255,.1);
+	border-radius : 3px;
+	margin-top : 3px;
+	border-color : lightgrey;
+	font-size:17px;
+	font-weight : 600;
+}
+
+/* footer */
+
+footer {
+	 background-color : rgba( 3, 2, 3, 0.9);
+    border-top: 1px solid #E7E7E7;
+    text-align:center;
+    padding-top:120px;
+    z-index: 79;
+    left: 0;
+    bottom: 0;
+    color : #fff;
+	 background-attachment : fixed;
+	 margin-top : 120px;	
+    width: 100%;
+	 height : 300px;
+}
+
+ /* end footer */
+
+
+/* time line  */
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #fff;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+/* end time line */
+
+/* animation css(slider)  and js */
+
+
+@-webkit-keyframes slide {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.slide {
+	visibility: hidden;
+}
+.slideRight {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: slide;
+  animation-name: slide;
+  visibility: visible;
+}
+/* end animation */
+
+.main {
+	max-width  : 1187px;
+	margin : auto;
+	background-attachment: fixed;
+}
+
+
+body {	
+	backgournd : #fff;
+}
+  /* Add smooth scrolling  */
+
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
+
+
+
+</head>
+<body>
+<nav class="nav" id="navbar">
+<ul class="nav navbar-nav">
+<li class='active main' style='font-size: 19px; font-weight : bold; '> <a class="brand" href="#home">Portfolio</a>
+</li>
+<li class="active nav-items"><a href="#home" style="float:right;">Présentation</a></li>
+<li><a href="#icon">Compétences</a></li>
+<li><a href="#skill">Projets</a></li>
+<li><a href="#timeline">Time Line</a></li>
+<li><a href="#goomap">Me contacter</a></li>
+</ul>
+</nav>
+
+<section id='home'>
+<div class='overlay'> John DOE <br />
+<span class='designation' id="designation"></span> <br />
+<a href='#section'> <button class='btn' style="background: #008CBA;color: white; padding : 17px; width : 150px; border-radius : 17px;" base='_self'> C'est parti!</button> </a>
+</div>
+</section>
+<div class="icon-bar" id='icon'>
+<a href="https://codepen.io/meteor314" target='_blank'><i class="fa fa-codepen" target="_blank"></i></a>
+<a href="https://github.com/meteor314" target="_blank"><i class="fa fa-github"></i></a>
+</div>
+
+<div class='main'>
+
+<div class='' id='section'>
+<div class='text'>
+<p>Bonjour ! Je me présente :John Doe, inéluctablement passionné d'informatique, de programmation et de nouvelles technologies de manière générale. <br />Je suis depuis de nombreuses années autodidacte dans le domaine de la programmation et en particulier du développement web. </p>
+</div>
+</div>
+
+
+<h2> Compétences </h2>
+<div class="section  slide" id='skill'>
+<b>Développement Web </b> <br /> <br />
+Front-end : HTML5, CSS3, JavaScript, jQuery <br />
+Back-end : PHP, SQL <br />
+Frameworks : Bootstrap <br /> <br />
+<b> Programmation </b> <br /> <br />
+C, C++, Python <br> <br />
+<b> Informatique (Logiciels & Autres) </b> <br /> <br />
+Microsoft Office (Word, Excel, PowerPoint), GIMP <br /> <br />
+<b> Langues </b> <br /> <br />
+Français, Anglais (scolaire), Espagnol (notions)
+</div>
+
+ <br /> <br />
+<h2> Projets </h2>
+
+<div id="project" class=" slide">
+<div class="text-center">
+<h4>Voici quelques projets que j'ai réalisé!</h4>
+</div>
+<div class="row slideRight">
+<div class="col-sm-4 col-xs-12">
+<div class="panel panel-default text-center">
+<div class="panel-heading">
+<h3>Editeur de texte simplifié</h3>
+</div>
+<div class="panel-body">
+<img src='https://www.jquery-az.com/wp-content/uploads/2016/12/65.0_1-bootstrap-text-editor.jpg' class="pricing" width="100%" height="305px">
+</div>
+<div class="panel-footer">
+<h3>C++</h3>
+<h4>Avec QtCreator</h4>
+<a href="https://github.com/mmeteore/editor"><button class="btn btn-lg" target="_blank">Plus de détail</button> </a>
+</div>
+</div>
+</div>
+<div class="col-sm-4 col-xs-12">
+<div class="panel panel-default text-center">
+<div class="panel-heading">
+<h3>Système d'articles</h3>
+</div>
+<div class="panel-body">
+<img src='https://images.ecosia.org/z0sVMM1jNrg2He2wzkwiogkrcc4=/0x390/smart/https%3A%2F%2Fwww.coma.lv%2Fwp-content%2Fuploads%2F2016%2F11%2Fphp-html-code.jpg' class="pricing" width="100%" height="305px">
+</div>
+<div class="panel-footer">
+<h3>Php, mySQL</h3>
+<h4>(en cours de création)</h4>
+<a href="https://github.com/mmeteore/project"><button class="btn btn-lg" target="_blank">Plus de détail</button></a>
+</div>
+</div>
+</div>
+<div class="col-sm-4 col-xs-12">
+<div class="panel panel-default text-center">
+<div class="panel-heading">
+<h3>Casse-brique</h3>
+</div>
+<div class="panel-body">
+<img src='http://revue.sesamath.net/IMG/jpg/carmetal-casse-briques-01b.jpg' class="pricing" width="100%" height="305px">
+</div>
+<div class="panel-footer">
+<h3>Js</h3>
+ <h4>Avec jQuery</h4>
+<a href="https://codepen.io/m-metore/pen/ROrqOR?editors=1000" class="pricing" width="100%" height="325px" target="_blank"><button class="btn btn-lg">Plus de détail</button></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<h2> Diplômes & expériences </h2>
+<div class="container" id="diploma">
+<div class="page-header">
+<h1 id="timeline">Timeline</h1>
+</div>
+<ul class="timeline">
+<li>
+<div class="timeline-badge slide"><i class="glyphicon glyphicon-check"></i></div>
+<div class="timeline-panel">
+<div class="timeline-heading">
+<h4 class="timeline-title">Obtention ASSR2</h4>
+<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2015</small></p>
+</div>
+<div class="timeline-body">
+<p data-tilt>J'ai obtenu l’Attestation scolaire de sécurité routière de deuxième niveau ( ASSR2). En troisième au collège de Capucins, à Melun</p>
+</div>
+</div>
+</li>
+<li class="timeline-inverted ">
+<div class="timeline-badge success slide"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+<div class="timeline-panel">
+<div class="timeline-heading">
+<h4 class="timeline-title">Obtention Brevet</h4>
+<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2016</small></p>
+</div>
+<div class="timeline-body">
+<p> Obtention de brevet de série générales (mentions très bien). En troisième au collège de Capucins</p>
+<a href="img.jpg"> Voir relevé de notes </a>
+</div>
+</div>
+</li>
+<li>
+<div class="timeline-badg slide "><i class="glyphicon glyphicon-check"></i></div>
+<div class="timeline-panel">
+<div class="timeline-heading">
+<h4 class="timeline-title">Stage Badaboum</h4>
+<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2016</small></p>
+</div>
+<div class="timeline-body">
+<p>J'ai réalisé un stage d'une semaine dans un magasin de produits ménagers, rangements, bricoloages. Ma mission était le rangements de produits, étiquettage, conseiller les clients.</p>
+</div>
+</div>
+</li>
+<li class="timeline-inverted slide">
+<div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+<div class="timeline-panel">
+<div class="timeline-heading">
+<h4 class="timeline-title">Bac S</h4>
+<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2019</small></p>
+</div>
+<div class="timeline-body">
+<p> Obtention de dipôme de Bac Scientifique option ISN  ((Informatique et Science du Numérique) au sein de lycée Henri Becquerel à Nangis.</p>
+</div>
+</div>
+</li>
+<li>
+<div class="timeline-badg slide "><i class="glyphicon glyphicon-floppy-disk"></i></div>
+<div class="timeline-panel">
+<div class="timeline-heading">
+<h4 class="timeline-title">Actuellement</h4>
+<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2019-2020</small></p>
+</div>
+<div class="timeline-body">
+<p>Etudiant en informatique. Je suis actuellement en BTS SIO au sein de l'établissement UTEC AVON et je travaille à Veolia Water Technologies. </p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+
+<h2> Mes centres d'intérêts </h2>
+<div class="section  slide" style="text-align: center;">
+<p> J'aime la programmation et l'informatique en général. <br />
+A côté de l'informatique, je suis fasciné par les mathématiques et l'astronomie. <br />
+J'aime le sport (en salle comme la natation, ou en plein air comme la randonnée). Je suis passionné l’histoire, la lecture et la photographie.
+</p>
+<i class=" glyphicon glyphicon-console icon"></i>
+<i class="glyphicon glyphicon-camera icon"> </i>
+<i class="glyphicon glyphicon-book icon"> </i>
+<i class="glyphicon glyphicon-screenshot icon"> </i>
+<i class="glyphicon glyphicon-wrench icon"> </i>
+</div>
+<br /> <br />
+
+<h2> Me contacter </h2>
+<div id="middle ">
+<div id="goomap">
+
+
+<iframe width="555" height="400" float="right" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=The+Rising+Sun,+High+Street,+Tarporley&amp;aq=0&amp;sll=53.800651,-4.064941&amp;sspn=12.709674,39.506836&amp;ie=UTF8&amp;hq=The+Rising+Sun,&amp;hnear=High+St,+Tarporley+CW6,+United+Kingdom&amp;cid=13650885383800041617&amp;ll=53.166791,-2.667961&amp;spn=0.018009,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+<br />
+
+</div>
+<div id="middlecontent" align="center">
+<h3>Pour toute demande, n'hésitez pas à me contacter</h3> <br /> <br />
+<input type="text" placeholder="Votre nom" />
+<input type="e-mail" placeholder="Votre e-mail" />
+<textarea type="text" placeholder="Votre commentaire"></textarea>
+<button class='btn' style="background: #008CBA;color: white; padding : 11px; width : 150px; border-radius : 17px;" base='_self'> Envoyer!</button> <br />
+<a href="mailto:sakir.mohammad@protonmail.com" style='color : grey;font-size : 17px;'>Ou m'envoyer un mail </a>
+</div>
+</div>
+</div>
+
+
+<footer>Ce site est proplusé par meteor <br />
+Vous pouvez me suivre également sur les réseaux sociaux ainsi que sur Github. <br />
+<a href="https://codepen.io/m-metore/pen/LvVwYx" target="_blank"> Code source disponible ici </a>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="app.js"></script>
+<style type="text/css">
+
+
+</style>
+
+
+<script id="rendered-js">
+// animate text 
+
+var i  = 0;
+var text = "Passioné par l'informatique tout simplement ! ";
+console.log(text.length);
+setInterval (function() {
+					if (i < text.length) {
+						document.getElementById('designation').innerHTML += text.charAt(i);
+						++i;
+					}
+				}, 97); // execute every 97 ms
+
+
+// change color text 
+setInterval(function() {
+	  var min = 1, max  = 253;
+     var colorText = Math.floor(Math.random() * (max - min + 1) + min); // generate an integer number
+	  
+	  document.getElementById("designation").style.color ="rgb(" + colorText + "," + colorText + "," +  colorText + ") !important";
+	
+}, 100);
+
+window.addEventListener("scroll", function(){
+	// add animation
+	
+    $(".slide").each(function(){
+      var elem_y = $(this).offset().top; // get elem pos with  pur jQuery
+
+      var win_y = window.pageYOffset; // get cuurent pos || window.offset().top;
+        if (elem_y < win_y + 600) {
+          $(this).addClass("slideRight");
+        }
+    });
+    // add animation
+ 
+	
+});
+    </script>
+</body>
+</html>
